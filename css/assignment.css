@@ -1,0 +1,303 @@
+nav{
+    background-color: #d4e09b;
+    
+}
+
+section{
+     background: url(../images/vjitlogo.jpeg);
+     background-size: cover;
+     height: 100vh;
+
+}
+.navcol{
+  background-color: #609966;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  
+}
+.navcol li{
+  display: flex;
+  
+}
+body{
+ font-family: poppins,sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  .active{
+    background-color:white;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(240, 148, 234);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  /*#container{
+       background-color: aqua;
+       length: 520px;
+       width: 350px;
+  }*/
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #C9F4AA;
+
+  }
+  .roboto{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .card1{
+    background-color: #61876E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    border-radius: 2%;
+    
+    
+  }
+  .card1 div{
+    padding: 2%;
+    height: auto;
+    border-radius: 10%;
+    margin: 1%;
+    width:100%;
+  }
+  /* Add some padding inside the card container */
+  
+
+  .container1{
+    align-items:center;
+    padding: auto;
+    height:290px;
+    width:200px;
+    background-color: rgb(228, 242, 203);
+    border-radius: 10%;
+  }
+  .container2{
+    padding: auto;
+    height:290px;
+    width:200px;
+    background-color: rgb(217, 234, 190);
+    border-radius: 50%;
+  }
+  .container3{
+    height:290px;
+    width:200px;
+    background-color:#e2ebce ;
+    align-items: center;
+    color: #253126;
+    padding: auto;
+    border-radius: 15%;
+   
+  }
+  .container {
+    column-count: 1;
+    text-align: center;
+  }
+
+  .logo1{
+ 
+    height: auto;
+
+
+  }
+  
+  
+  .footer{
+    background-color: #227C70;
+    max-width: 100%;
+  }
+
+  
+  #contactform{
+    padding: 10px 16px;
+    height: auto;
+    
+    background:#67b9bc;
+    width: 100%;
+    align-content: center;
+
+  }
+  #form{
+    align-content: center;
+    text-align: center;
+  }
+
+  .footer::after{
+    content :"";
+    display: table;
+    clear:both;
+    padding: 5%;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      column-count: 2;
+    }
+    h1{
+      max-height: 10%;
+    }
+    .card1{
+      position:relative;
+    }
+  
+    
+   
+    
+    #form{
+      max-width: fit-content;
+      align-items: center;
+    }
+   .left{
+    text-align: center;
+    padding: 2%;
+   }
+   
+   .container1{
+    padding: auto;
+    height:80px;
+    max-width:200px;
+    position:static;
+    background-color: darkolivegreen;
+    border-radius: 10%;
+  }
+  .card1{
+    position:absolute;
+  }
+  .section{
+    background-size: cover;
+    max-width: 100%;
+    height: 100px;
+  }
+  }
+  
+.table{
+  border: #111;
+  border-radius: 0%;
+  text-align: center;
+  text-decoration:#434f4f ;
+  border-radius: 5%;
+  width: 200px;
+  max-height: 450px;
+  background-color: #609966;
+ padding: 2%;
+
+}
+.table:hover{
+  background-color: rgb(129, 213, 174);
+  box-shadow: 0 8px 16px 0 rgba(155, 149, 149, 0.2);
+}
+.flex-container{
+  display:inline;
+  flex-wrap:wrap;
+  flex-direction:row;
+  max-width: 90%;
+  background-color: violet;
+  border: #111;
+  
+
+}
+.flex-container div{
+  height: 70px;
+  max-width: 30%;
+  padding: 2%;
+  border-radius: 3%;
+ 
+}
+.table{
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10%;
+  background-color: linear-gradient(#e66465, #9198e5);
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 2px solid #2a4254;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float:right;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+   }
+
+.gal{
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 30px;
+}
+
+.gal img{
+  width: 100%;
+  cursor: pointer;
+}
+h2{
+  text-align:center;
+}
+
