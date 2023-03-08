@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            assignment
+        </title>
+        <meta name="assignment" width="mobile=width inital-scale=1.0">
+        <style>
+            .form{
+                background-color: rgb(138, 209, 159);
+                justify-content: center;
+                text-align: center;
+                width: 20%;
+                height: auto;
+            }
+            body{
+                background-color: rgba(249, 249, 109, 0.783);
+            }
+            .buttons{
+                flex-direction: row;
+                flex-wrap: wrap;
+                display: flex;
+                margin : 2%;
+            }
+            .buttons form{
+                border-radius: 3%;
+                margin: 3%;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="buttons">
+        <form class="form">
+            <p>sessionStorage</p>
+            <p id="session">0</p>
+            <button onclick="clickCounter()" type="button">button</button>
+        </form><br>
+        <form class="form">
+            <p>localStorage</p>
+            <p id="local">0</p>
+
+            <button onclick="clickCount()" type="button">button</button>
+        </form>
+        </div>
+
+        <script>
+            function clickCounter(){
+               if(sessionStorage.clickCounter){
+                sessionStorage.clickCounter=Number(sessionStorage.clickCounter)+1;
+               }else{
+                sessionStorage.clickCounter=1;
+               }
+               document.getElementById('session').innerHTML=sessionStorage.clickCounter;
+            }
+            function clickCount(){
+               if(localStorage.x){
+                localStorage.x=Number(localStorage.x)+1;
+               }else{
+                localStorage.x=1;
+               }
+               document.getElementById('local').innerHTML=localStorage.x;
+            }
+        </script>
+
+    </body>
+</html>
