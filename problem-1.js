@@ -2,6 +2,5 @@
 //  represents the first letter of both the arguments. For the arguments Roger and Waters, the function 
 //  returns ‘RW’. Write this function.
 
-
-let name=(name1,name2) => name1[0]+name2[0]
-console.log(r('Roger','Waters'));
+let name=(name1,name2) => (name1[0]+name2[0]).toUpperCase();
+console.log(name('Roger','Waters'));
