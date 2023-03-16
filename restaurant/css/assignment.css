@@ -1,0 +1,153 @@
+nav {
+  background-color: rgb(158, 206, 190);
+  min-height: 50%;
+  padding: 0.15%;
+  border-radius: 0.15%;
+}
+nav h1 {
+  margin-left: 2%;
+  text-decoration: Bold;
+}
+
+.w3-container {
+  background-color: rgb(95, 177, 177);
+  width: 20%;
+  justify-content: center;
+  min-height: 100%;
+  align-items: center;
+  padding-left: 2%;
+}
+.w3-container div {
+  border-radius: 3%;
+  box-shadow: 10%;
+  border-color: black;
+  height: 30%;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1%;
+}
+.table {
+  padding: 2%;
+  border-radius: 3%;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 8%;
+  background-color: rgb(234, 240, 238);
+}
+.table:hover {
+  background-color: antiquewhite;
+}
+.table-body:hover {
+  background-color: antiquewhite;
+}
+.table:focus .pop {
+  display: block;
+}
+
+.table-details {
+  padding-top: 15%;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.main div {
+  border-color: beige;
+  height: auto;
+}
+
+.w3-container2 {
+  background-color: bisque;
+  width: 76%;
+  padding-left: 1%;
+  display: inline;
+  flex-wrap: wrap;
+}
+.search-menu {
+  align-items: center;
+  min-width: 70%;
+  height: 1.5%;
+  box-shadow: #6446a0;
+  box-shadow: 2px 3px 0px 0px rgb(120, 43, 43);
+}
+
+.verticalLine {
+  border-left: thick solid #121114;
+}
+
+/* popup box */
+
+.pop {
+  max-width: 40%;
+  min-height: 70%;
+  background-color: rgb(231, 235, 238);
+}
+
+.nav2 {
+  background-color: rgb(43, 77, 66);
+}
+#table2 th {
+  border-radius: 10%;
+  width: 3%;
+  justify-content: center;
+}
+#table1 th {
+  border-radius: 10%;
+  width: 3%;
+  justify-content: center;
+}
+#table3 th {
+  border-radius: 10%;
+  width: 3%;
+  justify-content: center;
+}
+
+.menu-image {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 5%;
+  padding: 3%;
+}
+
+.menu-title {
+  font-size: 1.5rem;
+}
+.menu-price {
+  font-weight: bold;
+  text-align: right;
+}
+.menu-title {
+  width: 300px;
+  position: inline;
+}
+
+.menu-item {
+  height: 100%;
+  width: 90%;
+  box-shadow: 1px 2px 2px 0px rgb(120, 43, 43);
+  background-color: rgb(212, 205, 191);
+  margin: 5%;
+  border-radius: 4%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.menu-item {
+  margin: 3%;
+  justify-content: space-between, space-around;
+}
+.menu-item span {
+  flex-wrap: wrap;
+  display: flex;
+  padding-top: 5%;
+}
+.tables {
+  height: 500px;
+  justify-content: space-around;
+  flex-direction: column;
+}

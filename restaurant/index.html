@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/assignment.css" rel="stylesheet" />
+    <title>Restuarant Application</title>
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../restaurant/searchitems.js"></script>
+     
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+       z-index: 1; 
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 80%;
+        margin: auto;
+     
+      }
+
+      /* Modal Content */
+      .modal-content {
+        display: flex;
+        flex-direction: column;
+        background-color: #fefefe;
+        margin: auto; 
+        padding: 0px;
+        width: 80%;
+        height: 80%;
+        align-items: normal;
+      }
+
+.close {
+        color: #9e0f0f;
+        font-size: 28px;
+        font-weight: bold;
+        padding-right:6%;
+      
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bd1a1a;
+        text-decoration: none;
+        cursor: pointer;
+      }
+   
+     .modalnav {
+        display:flex;
+        justify-content: space-between;
+       min-width: 99%;
+      }
+      .modalnav{
+
+  padding-top: 1%;
+  background-color: #f0f0f1;
+}
+
+      .modalnav .close {
+        margin-left: auto;
+      }
+     
+     
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1 style="text-align: center;">Zemoso Restuarant</h1>
+    </nav>
+    <div class="main">
+      <div class="w3-container">
+        <h1 style="text-align: center;">Tables</h1>
+        <br /><br />
+       <div class="modal"  id="myModal1">
+          <div class="modal-content">
+            <h1 class="modalnav"><span class="nav3">table-1 ordered details</span>
+              <span class="close" onclick="close(event)">&times;</span></h1>
+            <br><br>
+            <table id="table1">
+              <tr>
+                <th>s.no</th>
+                <th>name</th>
+                <th>quantity</th>
+                <th>amount</th>
+                <th>delete</th>
+              </tr>
+               
+          </table>
+
+            <div class="table-details">
+              <span>Total Items:<span id="total-items1">0</span></span>
+              <span>Total Cost:<span id="total-cost1">0</span></span>
+            </div><br>
+            <div class="bill" id="billname1" ><h3>Close Session (generate bill)</h3></div>
+          </div>
+         </div>
+         <div class="modal"  id="myModal2">
+          <div class="modal-content">
+            <h1 class="modalnav"><span>table-2 ordered details</span>
+              <span class="close" onclick="close(event)">&times;</span></h1>
+           <br><br>
+            <table id="table2">
+              <tr>
+                  <th>s.no</th>
+                  <th>name</th>
+                  <th>quantity</th>
+                  <th>amount</th>
+                  <th>delete</th>
+              </tr>
+               
+          </table>
+
+            <div class="table-details">
+              <span>Total Items:<span id="total-items2">0</span></span>
+              <span>Total Cost:<span id="total-cost2">0</span></span>
+            </div><br>
+            <div class="bill" id="billname2"><h2>Close Session (generate bill)</h2></div>
+          </div>
+         </div>
+         <div class="modal"  id="myModal3">
+          <div class="modal-content">
+           <h1 class="modalnav"><span>table-3 ordered details</span>
+            <span class="close" onclick="close(event)">&times;</span></h1>
+           <br><br>
+            <table id="table3">
+              <tr>
+                  <th>s.no</th>
+                  <th>name</th>
+                  <th>quantity</th>
+                  <th>amount</th>
+                  <th>delete</th>
+              </tr>
+               
+          </table>
+
+            <div class="table-details">
+              <span>Total Items:<span id="total-items3">0</span></span>
+              <span>Total Cost:<span id="total-cost3">0</span></span>
+            </div><br>
+            <div class="bill" id="billname3"><h2>Close Session (generate bill)</h2></div>
+          </div>
+         </div>
+        <input
+          class="search-table"
+          id="search-table"
+          type="text"
+          placeholder="Search Table"
+          
+        /><br /><br />
+        <div
+        class="table"
+        ondragover="allowDrop(event)"
+        ondrop="drop1(event)"
+        id="table1"
+      >
+        <span><h2>Table 1</h2></span>
+        <div class="table-details">
+          <span id="total-items-table1">Total Items:0</span>
+          <span id="total-cost-table1">Total Cost:0</span>
+        </div>
+      </div>
+        <div
+        class="table"
+        ondragover="allowDrop(event)"
+        ondrop="drop2(event)"
+        id="table2"
+      >
+        <span><h2>Table 2</h2></span>
+        <div class="table-details">
+          <span id="total-items-table2">Total Items:0</span>
+          <span id="total-cost-table2">Total Cost:0</span>
+        </div>
+      </div>
+      <div
+      class="table"
+      ondragover="allowDrop(event)"
+      ondrop="drop3(event)"
+      id="table3"
+    >
+      <span><h2>Table 3</h2></span>
+      <div class="table-details">
+        <span id="total-items-table3">Total Items:0</span>
+        <span id="total-cost-table3">Total Cost:0</span>
+      </div>
+    </div>
+
+          <script src="./searchtable.js"></script> 
+      </div>
+      <br />
+      <span class="verticalLine"></span>
+
+      <div class="w3-container2">
+        <h1 style="text-align: center;">Menu</h1>
+        <br /><br />
+        <span
+          style="justify-content: center; padding-left: 10%;width: fit-content;">
+          <input
+            id="search-menu"
+            class="search-menu"
+            type="text"
+            onkeyup="searchMenu()"
+            placeholder="search menu... by course,by food"
+        /></span>
+        <script src="./searchitems.js"></script>
+        <div id="menu-container"></div>
+        
+      </div>
+      
+      <script src="scripts.js"></script>
+      <script>
+        var modal1 = document.getElementById("myModal1");
+        var modal2 = document.getElementById("myModal2");
+        var modal3 = document.getElementById("myModal3");
+        var btn = document.getElementsByClassName("table");
+        console.log(btn[2]);
+  
+        var span1 = document.getElementsByClassName("close")[0];
+        var span2 = document.getElementsByClassName("close")[1];
+        var span3 = document.getElementsByClassName("close")[2];
+  
+    
+        btn[0].onclick = function () {
+          modal1.style.display = "block";
+        };
+        btn[1].onclick = function () {
+          modal2.style.display = "block";
+        };
+        btn[2].onclick = function () {
+          modal3.style.display = "block";
+        };
+  
+        
+        span1.onclick = function (event) {
+          modal1.style.display = "none";
+        };
+        span2.onclick = function (event) {
+          modal2.style.display = "none";
+        };
+        span3.onclick = function (event) {
+          modal3.style.display = "none";
+        };
+  
+        window.onclick = function (event) {
+          if (event.target == modal1) {
+            modal1.style.display = "none";
+          } else if (event.target == modal2) {
+            modal2.style.display = "none";
+          } else if (event.target == modal3) {
+            modal3.style.display = "none";
+          }
+        };
+      </script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
