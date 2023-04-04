@@ -1,0 +1,32 @@
+.paperstyle{
+    padding: '20px 30px';
+    width:300;
+    margin:"20px auto"
+}
+
+.head{
+    text-transform: solid;
+    
+}
+.footer{
+    
+    padding: 3px;
+    
+    
+}
+.google{
+    color: azure;
+    padding: 1%;
+    background-color: aquamarine;
+}
+.last{
+    padding-left:9% ;
+}
+.Button{
+    border-color: black;
+}
+.checkboxlabel{
+    display: space-between;
+    flex-wrap: wrap;
+    
+}
