@@ -1,5 +1,9 @@
 {
-    "tables": [{ "id": 1, "tableName": "Table 1", "items": [] }],
+ 
+
+    "tables": [{ "id": 1, "tableName": "Table 1", "items": [] },{ "id": 2, "tableName": "Table 2", "items": [] },{ "id": 3, "tableName": "Table 3", "items": [] }],
+
+ 
     "menu": [
       {
         "id": 1,
