@@ -58,56 +58,56 @@ public class Main {
             number += 6;
         }
 //        loops example
-//        System.out.println("enter the i value");
-//        int i = scanner.nextInt();
+        System.out.println("enter the i value");
+        int i = scanner.nextInt();
 
-//        Loops l1= new Loops();
-//        l1.ifloop(i);
-//
+        Loops l1= new Loops();
+        l1.ifloop(i);
+
 
 //        arrays example
-//        Arrays a1= new Arrays();
-//        a1.arrays();
+        Arrays a1= new Arrays();
+        a1.arrays();
 
 //   package example
-//        car car=new car();
-//        car.cars();
-//        System.out.println(car);
+        car car=new car();
+        car.cars();
+        System.out.println(car);
 
 //        constructor example
-//        ConstructorClass c1=new ConstructorClass();
-//        new ConstructorClass(5);
-//         animal cat=new animal();
-//        cat.cat();
-//        cat.dog();
+        ConstructorClass c1=new ConstructorClass();
+        new ConstructorClass(5);
+         animal cat=new animal();
+        cat.cat();
+        cat.dog();
 //
 ////        example for exception handling
-//        ExcetionHandling e=new ExcetionHandling();
-//        e.exceptionhandling();
+        ExcetionHandling e=new ExcetionHandling();
+        e.exceptionhandling();
 
 //        lambda example(anyomous function)
-//        lambda car=new lambda();
-//        car.drive(new functionalInterface() {
-//            @Override
-//            public void start() {
-//                System.out.println("start the drive...");
-//            }
-//        });
-//
-//        car.drive(()->{System.out.println("start driving");});
-//
+        lambda car1=new lambda();
+        car1.drive(new functionalInterface() {
+            @Override
+            public void start() {
+                System.out.println("start the drive...");
+            }
+        });
+
+        car1.drive(()->{System.out.println("start driving");});
+
 
 //        arraylist example
-//        ArrayListExample a2=new ArrayListExample();
-//        a2.arraylistexample();
+        ArrayListExample a2=new ArrayListExample();
+        a2.arraylistexample();
 
 //        hashmap example
-//        hashmap h1= new hashmap();
-//        h1.hashmapexample();
+        hashmap h1= new hashmap();
+        h1.hashmapexample();
 
 //        treemap and linkedhashmap example
-//        TreeMapandLinkedHashMap n1= new TreeMapandLinkedHashMap();
-//         n1.treeMap();
+        TreeMapandLinkedHashMap n1= new TreeMapandLinkedHashMap();
+         n1.treeMap();
 
 //        hashset examp-le
         HashSetexample e1= new HashSetexample();
