@@ -1,0 +1,9 @@
+
+‡
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Þýÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(´ðþé
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(Ó÷õÁ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(û‘¾¨
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÍÎÉ 
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ž¨ØÎûÿÿÿÿ
