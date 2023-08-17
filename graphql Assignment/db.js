@@ -1,5 +1,5 @@
 
-   coins= [
+  const coins= [
     {
       "id": "bitcoin",
       "icon": "https://api.coin-stats.com/api/files/812fde17aea65fbb9f1fd8a478547bde/f3738cc5df5f59afb57111d67d951170_1.png",
@@ -288,7 +288,7 @@
       "redditUrl": "https://www.reddit.com/r/Bitcoincash",
       "exp": [
         "https://blockchair.com/bitcoin-cash/blocks",
-        "http://blockdozer.com/insight/",
+        "https://blockdozer.com/insight/",
         "https://www.blocktrail.com/BCC"
       ],
       "chart":[
@@ -368,7 +368,7 @@
       "redditUrl": "https://www.reddit.com/r/litecoin",
       "twitterUrl": "https://twitter.com/LitecoinProject",
       "exp": [
-        "http://explorer.litecoin.net/chain/Litecoin",
+        "https://explorer.litecoin.net/chain/Litecoin",
         "https://chainz.cryptoid.info/ltc/",
         "https://live.blockcypher.com/ltc/"
       ],
@@ -416,12 +416,12 @@
       "priceChange1h": -0.42,
       "priceChange1d": -0.84,
       "priceChange1w": -6.41,
-      "websiteUrl": "http://www.monero.cc",
+      "websiteUrl": "https://www.monero.cc",
       "redditUrl": "https://www.reddit.com/r/monero",
       "twitterUrl": "https://twitter.com/monero",
       "exp": [
-        "http://moneroblocks.info/",
-        "http://chainradar.com/xmr/blocks"
+        "https://moneroblocks.info/",
+        "https://chainradar.com/xmr/blocks"
       ],
       "chart":[
         
@@ -453,7 +453,7 @@
     }
   ]
   
-   supportedExchanges = [
+  const  supportedExchanges = [
       "Bittrex",
       "Poloniex",
       "Coincheck",
@@ -575,7 +575,7 @@
     ]
   
 
-   fiatCurrency= [
+  const fiatCurrency= [
       {
         "name": "AUD",
         "rate": 1.3888505778832099,
@@ -776,7 +776,7 @@
       }
     ]
 
-  news=  [
+ const news=  [
       {
         "id": "10050097",
         "feedDate": 1542093852000,
@@ -868,7 +868,7 @@
         "description": "Bitmain co-founder Jihan Wu no longer has influence over the company’s decision-making processes after an executive board reshuffle, a lawyer told local media November 12. Wu Now ‘Supervisor’ As Sanyan Blockchain reports, the mining giant altered the make-up of its board last week. Among the changes, Wu’s position went from a director to a “supervisor,” which leaves him unable to vote in board decisions. “After changing to a supervisor, there is no voting right, so",
         "imgURL": "https://bitcoinist.com/wp-content/uploads/2018/08/qz-bitmain-cover-640x400.jpg",
         "link": "https://bitcoinist.com/bitmain-jihan-wu-no-influence/?utm_medium=Organic&utm_source=coinstats",
-        "sourceLink": "http://bitcoinist.com",
+        "sourceLink": "https://bitcoinist.com",
         "shareURL": "https://coinstats.app/news/10057491_Bitmain-No-Longer-Under-Influence-of-Jihan-Wu-Says-Lawyer"
       },
       {
@@ -879,7 +879,7 @@
         "description": "Bitcoin price dropped to two-week lows earlier today and could extend the decline to key support near $6,100.",
         "imgURL": "https://s3-us-west-2.amazonaws.com/coin-stats-news/sources/coindesk.png",
         "link": "https://www.coindesk.com/bitcoin-back-on-the-defensive-after-price-hits-two-week-low?utm_medium=Organic&utm_source=coinstats",
-        "sourceLink": "http://www.coindesk.com",
+        "sourceLink": "https://www.coindesk.com",
         "shareURL": "https://coinstats.app/news/10057461_Bitcoin-Back-on-the-Defensive-After-Price-Hits-TwoWeek-Low"
       },
       {

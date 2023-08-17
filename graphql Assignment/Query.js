@@ -3,7 +3,8 @@ exports.Query={
         return db.coins
      },
      chart:(parent, {  name },{db})=>{
-          return  data=db.coins.find((coin)=> coin.name===name)
+          const data=db.coins.find((coin)=> coin.name===name)
+          return data
           
      },
      supportedExchanges:(parent, args,{db})=>{
