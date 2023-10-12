@@ -1,12 +1,10 @@
-import { Button, ButtonBaseProps } from "@mui/material";
+import { Button  } from "@mui/material";
 import React from "react";
 
 interface ButtonProps {
     text:string;
     variant: 'outlined' | 'contained';
-    onClick?:()=>void;
-    icon?:string;
-    sx?:React.ReactNode
+    onClick?:()=>void;  
 }
 
 const CustomButton=(props:ButtonProps)=>{

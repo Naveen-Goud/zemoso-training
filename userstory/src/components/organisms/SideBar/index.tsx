@@ -1,4 +1,4 @@
-import { Box, Stack, styled } from "@mui/material";
+import { Box, Stack  } from "@mui/material";
 import React from "react";
 import IconTypo from "../../moleclues/IconTypo"; 
 import Vector from "../../../Images/assets/icons/Vector.svg"
