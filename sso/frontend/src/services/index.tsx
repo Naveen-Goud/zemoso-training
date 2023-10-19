@@ -13,8 +13,7 @@ export const securedAPITest = async (token : string) => {
 
     if (response.ok) {
       const data = await response.json();
-      return data;
-      console.log(data);
+      return data; 
     } else {
       console.error(`Failed to fetch data: ${response.status} - ${response.statusText}`);
     }
