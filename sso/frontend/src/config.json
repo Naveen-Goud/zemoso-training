@@ -1,0 +1,6 @@
+ {
+    "domain": "dev-8x4mammmkhd5lwfl.us.auth0.com",
+    "clientId": "dQIhnimKdxQTyMw4uz2Bj7EErDRaTZ6W",
+    "audience": "https://dev-8x4mammmkhd5lwfl.us.auth0.com/api/v2/",
+    "scope": "read:users"
+}
